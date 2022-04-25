@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(168, 146, 245, 0.842);
+	margin: 0;
+}
+header {
+	background-color: rgb(45 34 56);
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+	padding: 0 15px;
+}
+h1 {
+	color: hotpink;
+	margin: 0;
+	font-size: 50px;
+}
+main {
+	padding: 0 16px;
+}
+
+form {
+	display: flex;
+	align-items: flex-end;
+	gap: 28px;
+	margin-bottom: 20px;
+}
+form input {
+	height: 40px;
+	width: 450px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 0 20px;
+	font-size: 18px;
+}
+form button {
+	height: 44px;
+	padding: 0 50px;
+	background: #2d2238;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-size: 18px;
+	color: hotpink;
+	cursor: pointer;
+}
+.campo {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.campo label {
+	font-size: 25px;
+}
+#lista {
+	padding: 0px;
+	list-style-type: none;
+}
+#lista li {
+	padding: 18px;
+	margin-bottom: 10px;
+	background: #2d2238;
+	color: white;
+	border-radius: 8px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+}
+#lista li.riscar span {
+	text-decoration: line-through;
+	color: #aaa;
+}
+
+#lista li input {
+	margin: 0 20px 0 0;
+	width: 17px;
+	height: 17px;
+}
+#lista li button {
+	margin-left: auto;
+	background: none;
+	border: 0;
+	color: hotpink;
+	font-size: 17px;
+	cursor: pointer;
+}
+.totalText {
+	margin: 0;
+	color: white;
+	font-size: 19px;
+}
+.valor {
+	margin: 0;
+	color: white;
+	font-size: 25px;
+}
+#popUp {
+	background: #2d2238;
+	width: 400px;
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	border-radius: 10px;
+}
+#popUp form input {
+	width: 100%;
+}
+#formPopUp {
+	flex-direction: column;
+	align-items: center;
+}
+#popUp form button {
+	width: 100%;
+	background: white;
+}
+#formPopUp .campo {
+	width: 100%;
+}
+#popUp form label {
+	color: white;
+}

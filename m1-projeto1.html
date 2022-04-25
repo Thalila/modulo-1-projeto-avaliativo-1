@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Pharmacy Shopping List</title>
+		<link rel="stylesheet" href="m1-projeto1.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Pharmacy Shopping List</h1>
+			<div class="total">
+				<p class="totalText">Valor total:</p>
+				<p class="valor">R$ <span id="valorTotal"> 0,00 </span></p>
+			</div>
+		</header>
+		<main>
+			<form id="buscaPrincipal">
+				<div class="campo">
+					<label for="buscaInicial">Insira aqui o produto desejado:</label>
+					<input type="text" name="produto" id="buscaInicial" placeholder="Ex: sabonete, shampoo..." />
+				</div>
+				<button type="submit">Enviar</button>
+			</form>
+			<ul id="lista"></ul>
+		</main>
+		<div id="popUp" style="display: none">
+			<form id="formPopUp">
+				<div class="campo">
+					<label for="buscaInicial">Insira aqui o valor do produto:</label>
+					<input type="number" name="valor" id="valorInput" />
+				</div>
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+		<script src="m1-projeto1.js" type="text/javascript"></script>
+	</body>
+</html>
